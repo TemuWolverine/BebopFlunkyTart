@@ -1,5 +1,7 @@
-# Building The Bebop Flunky Tart
+# Building "The Bebop Flunky Tart"
 ## Printing
+![alt text](images/bambuslicer.png)  
+
 Proconfigured 3MF files are available, but if you'd like to control it all yourself, here are some recommendations
 
 * Infill: Gyroid
@@ -7,8 +9,13 @@ Proconfigured 3MF files are available, but if you'd like to control it all yours
 * Print the shell with the front panel facing down. You won't need any supports on the exterior of the shell (it's only a 25 degree angle), but you'll likely need some supports on the inside for where the back panel mounts.
 * Print the backpanel outside face down. If you're printing with the labels using an AMS or similar, it'll only need 4 filament swaps for the text, so it's relatively efficient with purge waste
 
+## Printing Post Processing
+Apart from removing the supports, there isn't a lot of post processing needed. If you have sharp edges from the brim, I recommend using a deburring tool. This can also be used to open up any holes if they printed too small
+
+![alt text](images/deburring.png)
+
 ## TODO: Inserts
-I find 320c on my soldering iron works great for installing the inserts.
+I find 320c on my soldering iron works great for installing the inserts. The inserts should be installed flush or slightly below the surface, not slightly above.
 
 ## TODO: Back plate 
 ## TODO: Screen
@@ -20,6 +27,13 @@ Follow the instructions that come with the heatsink/fan. If you pick the GeeekPi
 ## Amp 4 Pro
 To give the Amp 4 Pro board some clearance over the fan (and to allow general air flow), first install a 40pin header riser onto the Raspberry Pi.
 With that in, you'll need to use larger standoffs than what come in the Amp4Pro package. 
+
+You should now connect all the wires to the board - 2x power, 4x speaker wires.
+
+Plug in the ethernet cable
+
+## TODO: Installing the Pi+Screen+Amp4Pro into the shell
+
 
 ## Rotary Encoder/GPIO
 The Hifiberry boards use a bunch of pins, so only specific ones are still available despite the full header available on the Amp4Pro. [From the documentation](https://www.hifiberry.com/docs/hardware/gpio-usage-of-hifiberry-boards/)
