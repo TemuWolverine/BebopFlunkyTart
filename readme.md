@@ -1,5 +1,6 @@
 # Bebop Flunky Tart
-h
+(synonmys for "Music Assistant Pie")
+
 ## Parts list
 Mechanical  
 * [M2.5 Hex standoffs](https://www.amazon.com.au/dp/B07PHBTTGV)
