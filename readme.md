@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Bebop Flunky Tart](#bebop-flunky-tart)
+  - [Parts list](#parts-list)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Bebop Flunky Tart
 (synonmys for "Music Assistant Pie")
 

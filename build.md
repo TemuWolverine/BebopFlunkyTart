@@ -1,4 +1,29 @@
 # Building "The Bebop Flunky Tart"
+<!-- run 'doctoc .' from bash>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Hardware](#hardware)
+  - [Printing](#printing)
+    - [Filament](#filament)
+    - [Printing Post Processing](#printing-post-processing)
+  - [TODO: Inserts](#todo-inserts)
+  - [TODO: Back plate](#todo-back-plate)
+  - [Raspberry Pi](#raspberry-pi)
+  - [TODO: Screen](#todo-screen)
+  - [Heatsink Fan](#heatsink-fan)
+  - [Amp 4 Pro](#amp-4-pro)
+  - [TODO: Installing the Pi+Screen+Amp4Pro into the shell](#todo-installing-the-piscreenamp4pro-into-the-shell)
+  - [Rotary Encoder/GPIO](#rotary-encodergpio)
+- [Software](#software)
+  - [Option1: Raspbian](#option1-raspbian)
+    - [Touch Gestures (like scrolling)](#touch-gestures-like-scrolling)
+  - [TODO: Option2: DRM (Direct Rendering Manager)](#todo-option2-drm-direct-rendering-manager)
+  - [TODO: Player: WateryTart](#todo-player-waterytart)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+# Hardware
 ## Printing
 ![alt text](images/bambuslicer.png)  
 
@@ -9,7 +34,10 @@ Proconfigured 3MF files are available, but if you'd like to control it all yours
 * Print the shell with the front panel facing down. You won't need any supports on the exterior of the shell (it's only a 25 degree angle), but you'll likely need some supports on the inside for where the back panel mounts.
 * Print the backpanel outside face down. If you're printing with the labels using an AMS or similar, it'll only need 4 filament swaps for the text, so it's relatively efficient with purge waste
 
-## Printing Post Processing
+### Filament
+PLA is just fine, PETG would work too. I used Bambu's matte green PLA, and Jayo Black and White matte PLAs
+
+### Printing Post Processing
 Apart from removing the supports, there isn't a lot of post processing needed. If you have sharp edges from the brim, I recommend using a deburring tool. This can also be used to open up any holes if they printed too small
 
 ![alt text](images/deburring.png)
@@ -18,6 +46,11 @@ Apart from removing the supports, there isn't a lot of post processing needed. I
 I find 320c on my soldering iron works great for installing the inserts. The inserts should be installed flush or slightly below the surface, not slightly above.
 
 ## TODO: Back plate 
+
+## Raspberry Pi
+Install the microSD card now - it'll be a pain in the butt to get to later.
+
+
 ## TODO: Screen
 
 
@@ -56,7 +89,7 @@ If you want to use the push button function of the KY-040, plug SW into GPIO22/P
 
 
 # Software
-## Raspbian
+## Option1: Raspbian
 Open up **/boot/firmware/config.txt** (`sudo nano /boot/firmware/config.txt`) and add
 ```
 dtoverlay=hifiberry-amp4pro
@@ -81,7 +114,7 @@ card 0: sndrpihifiberry [snd_rpi_hifiberry_dacplus], device 0: HiFiBerry AMP4 Pr
   Subdevices: 1/1
   Subdevice #0: subdevice #0
 ```
-## Touch Gestures (like scrolling)
+### Touch Gestures (like scrolling)
 The stock Raspbian Desktop Environment does not include any handling of touch based scrolling, unless you tap the scroll bar.
 
 I went with KDE Plasma, [using this guide](https://lucstechblog.blogspot.com/2025/10/raspberry-os-bookworm-with-kde-desktop.html).
@@ -113,7 +146,32 @@ KDE Plasma supports touch out of the box, but you may want to install a virtual 
 sudo apt-get install maliit-keyboard
 ```
 
-Then you'll need to open up the system settings dialog in KDE, navigate to Keyboards, then select the maliit under Virtual Keyboards
+Then you'll need to open up the system settings dialog in KDE, navigate to Keyboards, then select the `maliit` under Virtual Keyboards
 
-## TODO: Player
+## TODO: Option2: DRM (Direct Rendering Manager)
+If you'd prefer DRM mode - a more kiosk-type mode, there is a bit more configuration.
+Using Raspbian-Lite, run through the same `dtoverlay` config process as in Option 1.  
+
+Instead of `dtoverlay=vc4-kms-v3d,noaudio`, use 
+
+```
+dtoverlay=vc4-kms-dsi-7inch,noaudio
+```
+The Freenove 5" touch screen emulates the older Raspberry Pi 7" touch screen.
+
+Then, you'll need to install a few other things to get it working.
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo reboot
+sudo apt-get install libgbm1 libgl1-mesa-dri mesa-utils libinput10
+sudo apt-get install kmscube
+sudo kmscube
+```
+
+If you see a test cube (on the screen), well done, that's working then.
+WateryTart (below) does not support DRM mode due to the way there is no on screen keyboard "built in" nor does it handle *physical keyboard* input - it has to be implemented by the application itself!
+
+## TODO: Player: WateryTart
 
