@@ -4,7 +4,7 @@
 ## Parts list
 Mechanical  
 * [M2.5 Hex standoffs](https://www.amazon.com.au/dp/B07PHBTTGV)
-* 11x M5 heatset inserts
+* 11x [M5x7.87mm heatset inserts](https://www.ebay.com.au/itm/176706086138)
 * 11x M5 x 12mm machine screws
 
 Electrical  
