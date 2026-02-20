@@ -44,3 +44,6 @@ I had already bought the Pi5, so I matched the amp to it.
 Any PLA or PETG, the amp doesn't get that hot
 
 
+## Model
+![alt text](images/Fusion360_NOl8xiB5L1.png)
+![alt text](images/Fusion360_BuTtbfHx2u.png)
