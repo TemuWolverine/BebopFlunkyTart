@@ -1,5 +1,22 @@
+
+
 # Bebop Flunky Tart
 (synonyms for "Music Assistant Pie")
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Build Guide](#build-guide)
+- [Parts list](#parts-list)
+  - [Mechanical](#mechanical)
+  - [Electrical](#electrical)
+  - [Pi Specific](#pi-specific)
+  - [Printing](#printing)
+- [Model](#model)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## [Build Guide](buildguide.md)
 
 ## Parts list
 These are links to the *exact* products I used and have modeled in the case design. You can more than likely get it cheaper from AliExpress - try and match the diameters of things like the binding posts, DC panel jack and toggle switch or you will need to modify the models yourself.

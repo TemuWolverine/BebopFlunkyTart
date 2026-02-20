@@ -5,6 +5,7 @@
 **Table of Contents**
 
 - [Hardware](#hardware)
+  - [Parts list](#parts-list)
   - [Printing](#printing)
     - [Filament](#filament)
     - [Printing Post Processing](#printing-post-processing)
@@ -24,6 +25,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 # Hardware
+## [Parts list](readme.md)
+
 ## Printing
 ![alt text](images/bambuslicer.png)  
 
