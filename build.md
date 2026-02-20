@@ -175,3 +175,8 @@ WateryTart (below) does not support DRM mode due to the way there is no on scree
 
 ## TODO: Player: WateryTart
 
+One of the volume modes in WateryTart allows it to control system volume, rather than just application volume. For that, you'll need to install pulseaudio-utils.  
+
+```bash
+sudo apt-get install pulseaudio-utils
+```
