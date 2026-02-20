@@ -45,6 +45,7 @@ The power supply just needs to match the desired output from the Hifiberry Amp4 
 
 * A 24v power supply gives a typical output of 28w per channel at 8Ω. ((28w *2)+15w) / 24v = 24v 2.95a minimum.
 
+This build assumes it is a centre pin positive power supply (most supplies are, but double check to be safe)
 
 ### Pi Specific  
 * Raspberry Pi 5
