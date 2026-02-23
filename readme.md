@@ -23,7 +23,7 @@ These are links to the *exact* products I used and have modeled in the case desi
 
 ### Mechanical  
 * [M2.5 Hex standoffs](https://www.amazon.com.au/dp/B07PHBTTGV)
-* 11x [M5 x 7.87mm heatset inserts](https://www.ebay.com.au/itm/176706086138)
+* 11x [M5 heatset inserts](https://www.ebay.com.au/itm/176706086138)
 * 11x M5 x 12mm machine screws
 
 ### Electrical  
