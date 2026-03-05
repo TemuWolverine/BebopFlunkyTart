@@ -1,3 +1,37 @@
+# [Moved to WateryTart.Hardware](https://github.com/TemuWolverine/WateryTart.Hardware/tree/main/WateryTart.RaspberryPi)
+.  
+.  
+.  
+.  
+.  
+.  
+  
+.  
+.  
+.  
+.  
+.  
+.  
+  
+.  
+.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Bebop Flunky Tart
 (synonyms for "Music Assistant Pie")
 
